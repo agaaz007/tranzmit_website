@@ -12,128 +12,140 @@ export function TestimonialsSection() {
 
         <div className="flex flex-row gap-8 w-full max-w-none mx-auto px-4 justify-center">
           {/* Market Research Firm */}
-          <Card className="relative bg-white text-black shadow-lg hover:shadow-2xl transition-all duration-500 ease-in-out border border-gray-200 overflow-hidden group w-[624px] shrink-0" style={{aspectRatio: '6/4'}}>
-            {/* Background Image - always visible */}
+          <Card className="relative overflow-hidden group w-[624px] shrink-0 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500" style={{aspectRatio: '6/4'}}>
             <div className="absolute inset-0">
               <img 
-                src="https://picsum.photos/900/600?random=1" 
-                alt="Market Research" 
+                src="/success_story_1.png" 
+                alt="Market Research Success" 
                 className="w-full h-full object-cover"
               />
+              {/* Gradient overlay from bottom up */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
               
-              {/* Tag overlay on image - always visible */}
-              <div className="absolute top-4 left-4 z-20">
-                <span className="inline-block bg-white/90 backdrop-blur-sm text-gray-700 text-base px-3 py-1 rounded-full shadow-sm border border-black">
+              {/* Company badge at top left */}
+              <div className="absolute top-6 left-6">
+                <span className="inline-block bg-black/30 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium">
                   Market Research Firm
                 </span>
               </div>
               
-              {/* Default state: White heading overlay on image */}
-              <div className="absolute inset-0 flex items-center justify-center z-10 group-hover:opacity-0 transition-opacity duration-500 ease-in-out">
-                <h3 className="text-5xl font-bold text-white text-center leading-tight drop-shadow-2xl">
-                  30% Higher Response Rates
+              {/* Default text content in bottom left on dark gradient */}
+              <div className="absolute bottom-8 left-8 right-8 text-white group-hover:opacity-0 transition-opacity duration-500">
+                <h3 className="text-4xl font-bold mb-3 text-left leading-tight">
+                  3x Faster Data Collection
                 </h3>
+                <p className="text-white/90 text-left text-lg leading-relaxed max-w-md">
+                  Completed 500+ customer interviews in 2 days instead of 6 weeks.
+                </p>
               </div>
-            </div>
-            
-            {/* Hover state: Glassy white overlay with content */}
-            <div className="absolute inset-0 bg-white/95 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out z-15 flex flex-col justify-center p-8">
-              <h3 className="text-4xl font-bold text-black text-center leading-tight mb-6">
-                30% Higher Response Rates
-              </h3>
-              <p className="text-gray-700 mb-6 text-xl text-center">
-                "Client satisfaction surveys improved dramatically with AI voice cloning. Respondents opened up more."
-              </p>
-              <div className="flex items-center justify-center text-green-600">
-                <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 11l3-3 3 3-3 3-3-3z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 17l3-3 3 3-3 3-3-3z" />
-                </svg>
-                <span className="font-semibold text-xl">Response rate: 45% → 75%</span>
+              
+              {/* Hover state: Expanded content with backdrop */}
+              <div className="absolute inset-0 bg-black/95 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center p-8">
+                <h3 className="text-4xl font-bold text-white text-left leading-tight mb-6">
+                  3x Faster Data Collection
+                </h3>
+                <p className="text-white/90 mb-6 text-xl text-left leading-relaxed">
+                  Completed 500+ customer interviews in 2 days instead of the usual 6 weeks. The AI interviewer maintained consistency across all conversations while adapting to each respondent's communication style.
+                </p>
+                <div className="flex items-center text-green-400">
+                  <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="font-semibold text-xl">Time saved: 6 weeks → 2 days</span>
+                </div>
               </div>
             </div>
           </Card>
 
           {/* Healthcare NGO */}
-          <Card className="relative bg-white text-black shadow-lg hover:shadow-2xl transition-all duration-500 ease-in-out border border-gray-200 overflow-hidden group w-[624px] shrink-0" style={{aspectRatio: '6/4'}}>
-            {/* Background Image - always visible */}
+          <Card className="relative overflow-hidden group w-[624px] shrink-0 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500" style={{aspectRatio: '6/4'}}>
             <div className="absolute inset-0">
               <img 
-                src="https://picsum.photos/900/600?random=2" 
-                alt="Healthcare NGO" 
+                src="/success_story_2.png" 
+                alt="Healthcare NGO Success" 
                 className="w-full h-full object-cover"
               />
+              {/* Gradient overlay from bottom up */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
               
-              {/* Tag overlay on image - always visible */}
-              <div className="absolute top-4 left-4 z-20">
-                <span className="inline-block bg-white/90 backdrop-blur-sm text-gray-700 text-base px-3 py-1 rounded-full shadow-sm border border-black">
+              {/* Company badge at top left */}
+              <div className="absolute top-6 left-6">
+                <span className="inline-block bg-black/30 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium">
                   Healthcare NGO
                 </span>
               </div>
               
-              {/* Default state: White heading overlay on image */}
-              <div className="absolute inset-0 flex items-center justify-center z-10 group-hover:opacity-0 transition-opacity duration-500 ease-in-out">
-                <h3 className="text-5xl font-bold text-white text-center leading-tight drop-shadow-2xl">
-                  Breakthrough in Rural Areas
+              {/* Default text content in bottom left on dark gradient */}
+              <div className="absolute bottom-8 left-8 right-8 text-white group-hover:opacity-0 transition-opacity duration-500">
+                <h3 className="text-4xl font-bold mb-3 text-left leading-tight">
+                  Reached 15,000 Rural Patients
                 </h3>
+                <p className="text-white/90 text-left text-lg leading-relaxed max-w-md">
+                  Successfully gathered health data from remote communities across 8 states.
+                </p>
               </div>
-            </div>
-            
-            {/* Hover state: Glassy white overlay with content */}
-            <div className="absolute inset-0 bg-white/95 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out z-15 flex flex-col justify-center p-8">
-              <h3 className="text-4xl font-bold text-black text-center leading-tight mb-6">
-                Breakthrough in Rural Areas
-              </h3>
-              <p className="text-gray-700 mb-6 text-xl text-center">
-                "Multilingual support enabled surveys in remote villages where traditional methods failed."
-              </p>
-              <div className="flex items-center justify-center text-blue-600">
-                <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span className="font-semibold text-xl">Coverage: 12 languages, 5,000+ respondents</span>
+              
+              {/* Hover state: Expanded content with backdrop */}
+              <div className="absolute inset-0 bg-black/95 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center p-8">
+                <h3 className="text-4xl font-bold text-white text-left leading-tight mb-6">
+                  Reached 15,000 Rural Patients
+                </h3>
+                <p className="text-white/90 mb-6 text-xl text-left leading-relaxed">
+                  Successfully gathered health needs data from remote communities across 8 states. Local dialect support and cultural sensitivity training helped break down barriers that prevented previous outreach efforts.
+                </p>
+                <div className="flex items-center text-blue-400">
+                  <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span className="font-semibold text-xl">Coverage: 8 states, 12 languages</span>
+                </div>
               </div>
             </div>
           </Card>
 
           {/* Political Polling */}
-          <Card className="relative bg-white text-black shadow-lg hover:shadow-2xl transition-all duration-500 ease-in-out border border-gray-200 overflow-hidden group w-[624px] shrink-0" style={{aspectRatio: '6/4'}}>
-            {/* Background Image - always visible */}
+          <Card className="relative overflow-hidden group w-[624px] shrink-0 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500" style={{aspectRatio: '6/4'}}>
             <div className="absolute inset-0">
               <img 
-                src="https://picsum.photos/900/600?random=3" 
-                alt="Political Polling" 
+                src="/success_story_3.png" 
+                alt="Political Polling Success" 
                 className="w-full h-full object-cover"
               />
+              {/* Gradient overlay from bottom up */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
               
-              {/* Tag overlay on image - always visible */}
-              <div className="absolute top-4 left-4 z-20">
-                <span className="inline-block bg-white/90 backdrop-blur-sm text-gray-700 text-base px-3 py-1 rounded-full shadow-sm border border-black">
+              {/* Company badge at top left */}
+              <div className="absolute top-6 left-6">
+                <span className="inline-block bg-black/30 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium">
                   Political Polling
                 </span>
               </div>
               
-              {/* Default state: White heading overlay on image */}
-              <div className="absolute inset-0 flex items-center justify-center z-10 group-hover:opacity-0 transition-opacity duration-500 ease-in-out">
-                <h3 className="text-5xl font-bold text-white text-center leading-tight drop-shadow-2xl">
-                  Unbiased Opinion Collection
+              {/* Default text content in bottom left on dark gradient */}
+              <div className="absolute bottom-8 left-8 right-8 text-white group-hover:opacity-0 transition-opacity duration-500">
+                <h3 className="text-4xl font-bold mb-3 text-left leading-tight">
+                  30% Higher Response Rates
                 </h3>
+                <p className="text-white/90 text-left text-lg leading-relaxed max-w-md">
+                  Captured honest voter sentiment with unprecedented participation rates.
+                </p>
               </div>
-            </div>
-            
-            {/* Hover state: Glassy white overlay with content */}
-            <div className="absolute inset-0 bg-white/95 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out z-15 flex flex-col justify-center p-8">
-              <h3 className="text-4xl font-bold text-black text-center leading-tight mb-6">
-                Unbiased Opinion Collection
-              </h3>
-              <p className="text-gray-700 mb-6 text-xl text-center">
-                "Behavioral psychology integration improved honesty and reduced social desirability bias."
-              </p>
-              <div className="flex items-center justify-center text-green-600">
-                <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span className="font-semibold text-xl">Accuracy improved by 25%</span>
+              
+              {/* Hover state: Expanded content with backdrop */}
+              <div className="absolute inset-0 bg-black/95 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center p-8">
+                <h3 className="text-4xl font-bold text-white text-left leading-tight mb-6">
+                  30% Higher Response Rates
+                </h3>
+                <p className="text-white/90 mb-6 text-xl text-left leading-relaxed">
+                  Conducted pre-election polling across swing states with unprecedented participation rates. Anonymous AI interviews reduced social desirability bias and captured honest voter sentiment that traditional polls missed.
+                </p>
+                <div className="flex items-center text-purple-400">
+                  <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                  <span className="font-semibold text-xl">Margin of error: ±1.2% vs industry ±3.5%</span>
+                </div>
               </div>
             </div>
           </Card>

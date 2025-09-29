@@ -30,15 +30,15 @@ export function UseCasesSection() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-screen-2xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-screen-2xl mx-auto items-stretch">
             {/* Concept testing */}
             <Card
-              className="overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 hover:scale-[1.03] animate-fade-in"
+              className="overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 hover:scale-[1.03] animate-fade-in h-full"
               style={{ animationDelay: '100ms' }}
             >
-              <div className="flex items-center">
-                <div className="flex h-28 w-28 items-center justify-center bg-muted ml-4 rounded-lg">
-                  <svg className="h-8 w-8 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center h-full py-3">
+                <div className="flex h-24 w-24 items-center justify-center bg-muted ml-4 rounded-lg">
+                  <svg className="h-7 w-7 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -47,9 +47,9 @@ export function UseCasesSection() {
                     />
                   </svg>
                 </div>
-                <div className="flex-1 self-center py-4 px-6">
-                  <h3 className="text-2xl font-semibold text-foreground mb-1">Concept testing</h3>
-                  <p className="text-lg text-muted-foreground">
+                <div className="flex-1 py-3 px-5">
+                  <h3 className="text-xl font-semibold text-foreground mb-1">Concept testing</h3>
+                  <p className="text-base text-muted-foreground">
                     Qualitative and quantitative feedback on new concepts and ideas.
                   </p>
                 </div>
@@ -58,12 +58,12 @@ export function UseCasesSection() {
 
             {/* Landing Page Test */}
             <Card
-              className="overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 hover:scale-[1.03] animate-fade-in"
+              className="overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 hover:scale-[1.03] animate-fade-in h-full"
               style={{ animationDelay: '200ms' }}
             >
-              <div className="flex items-center">
-                <div className="flex h-28 w-28 items-center justify-center bg-muted ml-4 rounded-lg">
-                  <svg className="h-8 w-8 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center h-full py-3">
+                <div className="flex h-24 w-24 items-center justify-center bg-muted ml-4 rounded-lg">
+                  <svg className="h-7 w-7 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -72,9 +72,9 @@ export function UseCasesSection() {
                     />
                   </svg>
                 </div>
-                <div className="flex-1 self-center py-4 px-6">
-                  <h3 className="text-2xl font-semibold text-foreground mb-1">Landing Page Test</h3>
-                  <p className="text-lg text-muted-foreground">
+                <div className="flex-1 py-3 px-5">
+                  <h3 className="text-xl font-semibold text-foreground mb-1">Landing Page Test</h3>
+                  <p className="text-base text-muted-foreground">
                     Understand how people react and what they think about your landing page.
                   </p>
                 </div>
@@ -83,12 +83,12 @@ export function UseCasesSection() {
 
             {/* Foundational Research */}
             <Card
-              className="overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 hover:scale-[1.03] animate-fade-in"
+              className="overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 hover:scale-[1.03] animate-fade-in h-full"
               style={{ animationDelay: '300ms' }}
             >
-              <div className="flex items-center mt-2">
-                <div className="flex h-28 w-28 items-center justify-center bg-muted ml-4 rounded-lg">
-                  <svg className="h-8 w-8 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center h-full py-3">
+                <div className="flex h-24 w-24 items-center justify-center bg-muted ml-4 rounded-lg">
+                  <svg className="h-7 w-7 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -97,9 +97,9 @@ export function UseCasesSection() {
                     />
                   </svg>
                 </div>
-                <div className="flex-1 self-center py-4 px-6">
-                  <h3 className="text-2xl font-semibold text-foreground mb-1">Foundational Research</h3>
-                  <p className="text-lg text-muted-foreground">
+                <div className="flex-1 py-3 px-5">
+                  <h3 className="text-xl font-semibold text-foreground mb-1">Foundational Research</h3>
+                  <p className="text-base text-muted-foreground">
                     Discover new opportunities through open-ended conversations.
                   </p>
                 </div>
@@ -108,12 +108,12 @@ export function UseCasesSection() {
 
             {/* Brand Perception */}
             <Card
-              className="overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 hover:scale-[1.03] animate-fade-in"
+              className="overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 hover:scale-[1.03] animate-fade-in h-full"
               style={{ animationDelay: '400ms' }}
             >
-              <div className="flex items-center">
-                <div className="flex h-28 w-28 items-center justify-center bg-muted ml-4 rounded-lg">
-                  <svg className="h-8 w-8 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center h-full py-3">
+                <div className="flex h-24 w-24 items-center justify-center bg-muted ml-4 rounded-lg">
+                  <svg className="h-7 w-7 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -122,9 +122,9 @@ export function UseCasesSection() {
                     />
                   </svg>
                 </div>
-                <div className="flex-1 self-center py-4 px-6">
-                  <h3 className="text-2xl font-semibold text-foreground mb-1">Brand Perception</h3>
-                  <p className="text-lg text-muted-foreground">
+                <div className="flex-1 py-3 px-5">
+                  <h3 className="text-xl font-semibold text-foreground mb-1">Brand Perception</h3>
+                  <p className="text-base text-muted-foreground">
                     Understand how customers and prospects view your brand.
                   </p>
                 </div>
@@ -133,12 +133,12 @@ export function UseCasesSection() {
 
             {/* Creative Testing */}
             <Card
-              className="overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 hover:scale-[1.03] animate-fade-in"
+              className="overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 hover:scale-[1.03] animate-fade-in h-full"
               style={{ animationDelay: '500ms' }}
             >
-              <div className="flex items-center">
-                <div className="flex h-28 w-28 items-center justify-center bg-muted ml-4 rounded-lg">
-                  <svg className="h-8 w-8 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center h-full py-3">
+                <div className="flex h-24 w-24 items-center justify-center bg-muted ml-4 rounded-lg">
+                  <svg className="h-7 w-7 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -147,9 +147,9 @@ export function UseCasesSection() {
                     />
                   </svg>
                 </div>
-                <div className="flex-1 self-center py-4 px-6">
-                  <h3 className="text-2xl font-semibold text-foreground mb-1">Creative Testing</h3>
-                  <p className="text-lg text-muted-foreground">
+                <div className="flex-1 py-3 px-5">
+                  <h3 className="text-xl font-semibold text-foreground mb-1">Creative Testing</h3>
+                  <p className="text-base text-muted-foreground">
                     Test ads and get real-time feedback from your target audience.
                   </p>
                 </div>
@@ -158,12 +158,12 @@ export function UseCasesSection() {
 
             {/* Usability Testing */}
             <Card
-              className="overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 hover:scale-[1.03] animate-fade-in"
+              className="overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 hover:scale-[1.03] animate-fade-in h-full"
               style={{ animationDelay: '600ms' }}
             >
-              <div className="flex items-center">
-                <div className="flex h-28 w-28 items-center justify-center bg-muted ml-4 rounded-lg">
-                  <svg className="h-8 w-8 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center h-full py-3">
+                <div className="flex h-24 w-24 items-center justify-center bg-muted ml-4 rounded-lg">
+                  <svg className="h-7 w-7 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -172,9 +172,9 @@ export function UseCasesSection() {
                     />
                   </svg>
                 </div>
-                <div className="flex-1 self-center py-4 px-6">
-                  <h3 className="text-2xl font-semibold text-foreground mb-1">Usability Testing</h3>
-                  <p className="text-lg text-muted-foreground">
+                <div className="flex-1 py-3 px-5">
+                  <h3 className="text-xl font-semibold text-foreground mb-1">Usability Testing</h3>
+                  <p className="text-base text-muted-foreground">
                     Watch how people use your product and identify pain points.
                   </p>
                 </div>

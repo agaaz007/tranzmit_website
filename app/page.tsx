@@ -6,9 +6,7 @@ import { PlatformSection } from "@/components/platform-section"
 import { StreamlinedResearchSection } from "@/components/streamlined-research-section"
 import { MoreThanWordsSection } from "@/components/more-than-words-section"
 import { StatisticsSection } from "@/components/statistics-section"
-import { TestimonialQuoteSection } from "@/components/testimonial-quote-section"
 import { GetCloserCustomersSection } from "@/components/get-closer-customers-section"
-import { ComplianceBadges } from "@/components/compliance-badges"
 import { Footer } from "@/components/footer"
 
 export default function HomePage() {
@@ -21,11 +19,9 @@ export default function HomePage() {
         <UseCasesSection />
         <PlatformSection />
         <StreamlinedResearchSection />
+        <GetCloserCustomersSection />
         <MoreThanWordsSection />
         <StatisticsSection />
-        <TestimonialQuoteSection />
-        <GetCloserCustomersSection />
-        <ComplianceBadges />
       </main>
       <Footer />
     </div>

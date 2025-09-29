@@ -22,34 +22,27 @@ export function Header() {
       scrolled ? 'shadow-md' : ''
     }`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between py-2">
-          {/* Left spacer for balance */}
-          <div className="flex-1"></div>
-          
-          {/* Centered branding with microphone */}
-          <div className="flex items-center justify-center py-2">
-            <Link href="/" className="flex items-center space-x-4 hover:opacity-80 transition-opacity">
-              {/* Glassy Microphone SVG */}
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="opacity-60">
-                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" fill="url(#glassMic)" stroke="currentColor" strokeWidth="0.5"/>
-                <path d="M19 10v2a7 7 0 0 1-14 0v-2" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.7"/>
-                <path d="M12 19v4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.7"/>
-                <path d="M8 23h8" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.7"/>
-                <defs>
-                  <linearGradient id="glassMic" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#ffffff" stopOpacity="0.8"/>
-                    <stop offset="50%" stopColor="#f8fafc" stopOpacity="0.6"/>
-                    <stop offset="100%" stopColor="#e2e8f0" stopOpacity="0.4"/>
-                  </linearGradient>
-                </defs>
-              </svg>
-              <span className="font-bold text-3xl text-blue-600 font-sans" style={{ lineHeight: '0.9', fontFamily: 'Inter, system-ui, sans-serif' }}>TRANZMIT</span>
+        <div className="flex h-16 items-center justify-between">
+          {/* Left-aligned logo */}
+          <div className="flex items-center">
+            <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+              {/* Transmission/Signal icon */}
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-white">
+                  {/* Signal waves */}
+                  <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" fill="currentColor"/>
+                  <path d="M12 12m-4 0a4 4 0 0 1 8 0a4 4 0 0 1 -8 0" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                  <path d="M12 12m-7 0a7 7 0 0 1 14 0a7 7 0 0 1 -14 0" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                  <path d="M12 12m-10 0a10 10 0 0 1 20 0a10 10 0 0 1 -20 0" stroke="currentColor" strokeWidth="1" fill="none" opacity="0.6"/>
+                </svg>
+              </div>
+              <span className="font-bold text-2xl text-gray-900 font-sans">TRANZMIT</span>
             </Link>
           </div>
 
           {/* Right side with demo button */}
-          <div className="flex items-center flex-1 justify-end">
-            <Button size="sm" className="text-base font-medium px-6 py-2" asChild>
+          <div className="flex items-center">
+            <Button size="default" className="text-base font-medium px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white" asChild>
               <a href="/book-demo">Request Demo</a>
             </Button>
           </div>

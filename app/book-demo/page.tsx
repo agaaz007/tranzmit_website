@@ -1,6 +1,5 @@
 import { BookDemoForm } from "@/components/book-demo-form"
 import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
 
 export const metadata = {
   title: "Book Demo - Tranzmit AI",
@@ -14,7 +13,6 @@ export default function BookDemoPage() {
       <main className="pt-20">
         <BookDemoForm />
       </main>
-      <Footer />
     </div>
   )
 }
