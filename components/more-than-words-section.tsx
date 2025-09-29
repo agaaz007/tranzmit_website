@@ -10,7 +10,7 @@ export function MoreThanWordsSection() {
             </p>
           </div>
           <div className="relative lg:col-span-4 flex justify-end">
-            <div className="bg-gray-100 rounded-2xl overflow-hidden" style={{width: '812px', height: '689px'}}>
+            <div className="bg-gray-100 rounded-2xl overflow-hidden" style={{width: '568px', height: '482px'}}>
               <img
                 src="/professional-person-using-smartphone-in-modern-off.jpg"
                 alt="Person using smartphone"

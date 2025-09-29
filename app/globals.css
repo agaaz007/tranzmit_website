@@ -117,6 +117,11 @@
 }
 
 @layer base {
+  html {
+    /* The browser default is 16px. We scale it to 77%: 16 * 0.77 = 12.32 */
+    font-size: 12.32px;
+  }
+  
   * {
     @apply border-border outline-ring/50;
   }

@@ -173,7 +173,7 @@ export function BookDemoForm() {
                       placeholder="Describe your current surveying challenges and what you'd like to see in the demo..."
                       value={formData.surveyNeeds}
                       onChange={(e) => handleInputChange("surveyNeeds", e.target.value)}
-                      className="min-h-[80px] text-sm transition-all duration-300 focus:scale-[1.01] resize-none"
+                      className="min-h-[56px] text-sm transition-all duration-300 focus:scale-[1.01] resize-none"
                     />
                   </div>
 
