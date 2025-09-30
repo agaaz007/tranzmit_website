@@ -22,7 +22,7 @@ export function Header() {
       scrolled ? 'shadow-md' : ''
     }`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-16 items-center justify-between min-w-0">
           {/* Left-aligned logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
@@ -41,8 +41,8 @@ export function Header() {
           </div>
 
           {/* Right side with demo button */}
-          <div className="flex items-center">
-            <Button size="default" className="text-base font-medium px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white" asChild>
+          <div className="flex items-center flex-shrink-0">
+            <Button size="default" className="text-sm sm:text-base font-medium px-4 sm:px-8 py-2 sm:py-3 bg-blue-600 hover:bg-blue-700 text-white" asChild>
               <a href="/book-demo">Request Demo</a>
             </Button>
           </div>

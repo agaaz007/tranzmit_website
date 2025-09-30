@@ -10,9 +10,9 @@ export function TestimonialsSection() {
           </h2>
         </div>
 
-        <div className="flex flex-row gap-8 w-full max-w-none mx-auto px-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-8 w-full max-w-none mx-auto px-4 justify-center">
           {/* Market Research Firm */}
-          <Card className="relative overflow-hidden group w-[481px] shrink-0 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500" style={{aspectRatio: '6/4'}}>
+          <Card className="relative overflow-hidden group w-full sm:w-[481px] shrink-0 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500" style={{aspectRatio: '6/4'}}>
             <div className="absolute inset-0">
               <img 
                 src="/success_story_1.png" 
@@ -58,7 +58,7 @@ export function TestimonialsSection() {
           </Card>
 
           {/* Healthcare NGO */}
-          <Card className="relative overflow-hidden group w-[481px] shrink-0 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500" style={{aspectRatio: '6/4'}}>
+          <Card className="relative overflow-hidden group w-full sm:w-[481px] shrink-0 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500" style={{aspectRatio: '6/4'}}>
             <div className="absolute inset-0">
               <img 
                 src="/success_story_2.png" 
@@ -105,7 +105,7 @@ export function TestimonialsSection() {
           </Card>
 
           {/* Political Polling */}
-          <Card className="relative overflow-hidden group w-[481px] shrink-0 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500" style={{aspectRatio: '6/4'}}>
+          <Card className="relative overflow-hidden group w-full sm:w-[481px] shrink-0 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500" style={{aspectRatio: '6/4'}}>
             <div className="absolute inset-0">
               <img 
                 src="/success_story_3.png" 
