@@ -106,3 +106,4 @@ Next Steps: Contact the lead within 24 hours to schedule their personalized demo
     // Don't throw error - email failure shouldn't block form submission
   }
 }
+

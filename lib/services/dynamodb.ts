@@ -40,3 +40,4 @@ export async function saveDemoSubmission(data: DemoSubmission): Promise<void> {
     throw new Error('Failed to save demo submission');
   }
 }
+
