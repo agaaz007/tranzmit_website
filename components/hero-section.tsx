@@ -15,9 +15,12 @@ export function HeroSection() {
             insights — with results in hours, not weeks.
           </p>
 
-          <div className="mt-10">
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className="px-12 py-4 text-lg font-semibold" asChild>
               <a href="/book-demo">Request Demo</a>
+            </Button>
+            <Button variant="outline" size="lg" className="px-12 py-4 text-lg font-semibold border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white" asChild>
+              <a href="/sample-report">View Sample Report</a>
             </Button>
           </div>
 

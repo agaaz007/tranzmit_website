@@ -6,8 +6,10 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent } from "@/components/ui/card"
-import { Calendar, Zap } from "lucide-react"
+import { Calendar, Zap, Loader2 } from "lucide-react"
 import { useState } from "react"
+import { toast } from "sonner"
+import { ApiResponse } from "@/lib/types/form"
 
 export function BookDemoForm() {
   const [formData, setFormData] = useState({
@@ -18,15 +20,47 @@ export function BookDemoForm() {
     organizationType: "",
     surveyNeeds: ""
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
+    setIsSubmitting(true)
+
+    try {
+      const response = await fetch('/api/submit-demo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const result: ApiResponse = await response.json()
+
+      if (result.success) {
+        toast.success(result.message)
+        // Clear form on success
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          organization: "",
+          organizationType: "",
+          surveyNeeds: ""
+        })
+      } else {
+        toast.error(result.message)
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+      toast.error('Something went wrong. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -211,10 +245,20 @@ export function BookDemoForm() {
                   <Button 
                     type="submit" 
                     size="lg" 
-                    className="w-full h-12 text-base font-bold bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl"
+                    disabled={isSubmitting}
+                    className="w-full h-12 text-base font-bold bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    <Zap className="h-5 w-5 mr-2" />
-                    Schedule My AI Demo
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="h-5 w-5 mr-2 animate-spin" />
+                        Submitting...
+                      </>
+                    ) : (
+                      <>
+                        <Zap className="h-5 w-5 mr-2" />
+                        Schedule My AI Demo
+                      </>
+                    )}
                   </Button>
                 </form>
               </CardContent>

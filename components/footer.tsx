@@ -6,9 +6,9 @@ export function Footer() {
           {/* Main tagline */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              We tranzmit invaluable insights
+            Get valuable customer intelligence with Tranzmit
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Transform your customer research with AI-powered interviews that deliver deeper insights faster than ever before.
             </p>
           </div>
